@@ -45,7 +45,9 @@ public class Driver {
                     }
                     break;
 
+
                 case "remote-firefox":
+
 
                     try {
                         // assign your grid server address
