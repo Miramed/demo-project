@@ -35,11 +35,11 @@ public class Driver {
                 case "remote-chrome":
                     try {
                         // assign your grid server address
-                        String gridAddress = "52.90.101.317";
-                        URL url = new URL("http://" + gridAddress + ":4444/wd/hub");
-                        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+                        String gridAddress = "54.234.38.163";    // IP from selenium grid Server
+                        URL url = new URL("http://" + gridAddress + ":4444/wd/hub");    // Url with contact
+                        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();   // to define browser
                         desiredCapabilities.setBrowserName("chrome");
-                        driver = new RemoteWebDriver(url, desiredCapabilities);
+                        driver = new RemoteWebDriver(url, desiredCapabilities);  // this is for remote execution
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
