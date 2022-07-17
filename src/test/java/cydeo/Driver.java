@@ -33,6 +33,7 @@ public class Driver {
             System.out.println("Browser: " + browser);
             switch (browser) {
                 case "remote-chrome":
+
                     try {
                         // assign your grid server address
                         String gridAddress = "54.234.38.163";    // IP from selenium grid Server
